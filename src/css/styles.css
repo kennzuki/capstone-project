@@ -28,10 +28,12 @@ button {
 img {
   width: 200px;
   border-radius: 5px;
+  margin: auto;
 }
 .title {
   color: #ed5e3f;
   padding: -8px;
+  text-decoration: underline;
 }
 
 .favourites {
@@ -43,4 +45,16 @@ img {
   padding: 8px;
   font-weight: bold;
   text-align: center;
+}
+.random {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
 }
