@@ -4,18 +4,19 @@
   place-items: center;
   justify-content: space-between;
   padding: 8px;
+  border-bottom: solid #ed5e3f;
 }
 .logo {
   color: #ed5e3f;
   font: 35px;
 }
 button {
-    background-color: #ed5e3f;
-    color: white;
-    font-weight:bold ;
-    padding:4px 4px;
-    border-radius: 5px;
-    border-color:#ed5e3f ;
+  background-color: #ed5e3f;
+  color: white;
+  font-weight: bold;
+  padding: 4px 4px;
+  border-radius: 5px;
+  border-color: #ed5e3f;
 }
 .nav {
   display: flex;
@@ -26,4 +27,20 @@ button {
 }
 img {
   width: 200px;
+  border-radius: 5px;
+}
+.title {
+  color: #ed5e3f;
+  padding: -8px;
+}
+
+.favourites {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  border-top: 1px;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
 }
