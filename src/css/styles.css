@@ -25,6 +25,12 @@ button {
   list-style: none;
   font-size: large;
 }
+input {
+  border-color: #ed5e3f;
+  border-radius: 20px;
+  color: #ed5e3f;
+  padding: 4px;
+}
 img {
   width: 200px;
   border-radius: 5px;
@@ -45,12 +51,33 @@ img {
   padding: 8px;
   font-weight: bold;
   text-align: center;
+
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 .random {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: center;
   text-align: center;
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 .card {
   display: flex;
