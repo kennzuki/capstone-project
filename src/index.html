@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Ken's recipe app</title>
   </head>
@@ -12,10 +19,10 @@
       <!-- nav -->
       <header class="header">
         <h1 class="logo">Ken's recipe app</h1>
-        <ul class="nav">
-          <input type="text" placeholder="Search" />
-          <button class="li-fav">Favourite</button>
-        </ul>
+        <form class="input-container">
+          <input type="text" class="input" placeholder="Search ..." />
+          <i class="fa-solid fa-magnifying-glass magnifier"></i>
+        </form>
       </header>
       <!-- nav -->
       <h1 class="title">Favourites</h1>
