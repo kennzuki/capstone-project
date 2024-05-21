@@ -1,1 +1,29 @@
- /* Your own styles comes here */
+/* Your own styles comes here */
+.header {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+.logo {
+  color: #ed5e3f;
+  font: 35px;
+}
+button {
+    background-color: #ed5e3f;
+    color: white;
+    font-weight:bold ;
+    padding:4px 4px;
+    border-radius: 5px;
+    border-color:#ed5e3f ;
+}
+.nav {
+  display: flex;
+  place-items: center;
+  gap: 4px;
+  list-style: none;
+  font-size: large;
+}
+img {
+  width: 200px;
+}
