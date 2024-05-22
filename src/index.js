@@ -9,6 +9,12 @@ const randomImg = document.getElementById('random-img');
 const recipeName = document.getElementById('recipe-name');
 const recipeIngredients = document.getElementById('recipe-ingredients');
 
+const searchMeal = async (val) => {
+    
+ 
+   
+};
 
+form.addEventListener("submit", searchMeal);
 
 
