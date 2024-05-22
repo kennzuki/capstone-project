@@ -6,14 +6,14 @@ async function getRandomMeal() {
   try {
     const cardsContainer = document.getElementById('cards-container');
     for (let i = 0; i < 8; i++) {
-      // Fetch a random meal
       let response = await fetch(
         'https://www.themealdb.com/api/json/v1/1/random.php'
       );
       let data = await response.json();
-      let meal = data.meals[0]; // Get the meal object
+      let meal = data.meals[0]; //
+      console.log(meal);
 
-      // Create a card for the meal
+      // Card for the meal
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
@@ -27,7 +27,6 @@ async function getRandomMeal() {
                   </Button>
                 `;
 
-      // Append the card to the container
       cardsContainer.appendChild(card);
     }
   } catch (error) {
@@ -35,5 +34,4 @@ async function getRandomMeal() {
   }
 }
 
-// Initialize
 getRandomMeal();
