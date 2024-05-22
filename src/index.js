@@ -19,7 +19,12 @@ async function getRandomMeal() {
       card.innerHTML = `
                     <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
                     <h2>${meal.strMeal}</h2>
-            
+                    <Button variant="primary">
+                    view recipe
+                  </Button>
+                  <Button variant="primary">
+                    Favourite
+                  </Button>
                 `;
 
       // Append the card to the container
