@@ -9,8 +9,7 @@ export default class MealDB {
       const data = (await res).json();
       return data.meals[0];
     } catch (error) {
-      console.error('error try another time');
+      return error;
     }
-    
   }
 }
