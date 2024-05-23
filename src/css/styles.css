@@ -134,3 +134,14 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 2rem;
+  position: relative;
+  overflow: auto;
+  max-height: 100vh;
+  max-width: 600px;
+  width: 100%;
+}
