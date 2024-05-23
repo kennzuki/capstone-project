@@ -1,10 +1,10 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-/** This is the entry point of your app */
 import { MealDB } from './Meal';
+/** This is the entry point of your app */
 
-const mealDB = new MealDB('1'); 
+const mealDB = new MealDB('1');
 
 // DOM elements
 const mealList = document.getElementById('meal-list');
