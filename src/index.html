@@ -14,21 +14,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Ken's recipe app</title>
   </head>
-  <body>
-    <div class="container">
-      <!-- Your code comes here -->
-      <!-- nav -->
-      <header class="header">
-        <h1 class="logo">Ken's recipe app</h1>
-        <form class="input-container">
-          <input type="text" class="input" placeholder="Search ..." />
-          <i class="fa-solid fa-magnifying-glass magnifier"></i>
-        </form>
-      </header>
-      <!-- nav -->
-      <h1 class="title">Favourites</h1>
-      <!-- favourite -->
-      <ul class="favourites">
+  <body class="max-w-[800px] p-12 bg-gray-200 flex flex-col items-center mx-auto">
+    <header>
+        <h1 class="font-bold text-orange-700 text-3xl py-8">Ken's recipe app</h1>
+    </header>
+    <!-- hero -->
+    <ul class="flex gap-2 [&_img]:rounded-full text-center">
         <li>
           <img
             src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -62,30 +53,19 @@
           <p class="">Burger</p>
         </li>
       </ul>
-
-      <!-- favourite -->
-      <h2 class="title">Random recipes</h2>
-      <!-- random recipe's -->
-      <div class="random">
-        <div id="meals"></div>
-      </div>
-      <div
-        id="cards-container"
-        class="grid xs:grid-cols-1 md:grid-cols-4"
-      ></div>
-      <!-- random recipe's -->
-        <!-- view recipe's -->
-        <div class="popup-container hidden " id="meal-popup">
-          <div class="popup">
-              <button id="close-popup" class="close-popup">
-                  <i class="fas fa-times"></i>
-              </button>
-              <div class="meal-info" id="meal-info"></div>
-          </div>
-      </div>
+    <!-- hero -->
+    <div class="flex justify-evenly gap-6 border-b border-b-yellow-400 py-8 [&_button]:bg-yellow-400 [&_button]:py-1 [&_button]:px-3 [&_button]:rounded [&_button]:font-white">
+       
+        <input class="border border-yellow-400 p-2 rounded-xl" type="text" id="search-input" placeholder="Search for a meal...">
+  <button id="search-button">Search</button>
+  <button id="random-meal-button">Get Random Meal</button>
     </div>
-    <!-- view recipe's -->
-    </div>
+  
+  <h3 class="my-8 text-center">Meals results click on the meal to view ingredients & instructions</h3>
+  
+  <ul id="meal-list" class=""></ul>
+  
+  <div id="meal-details"></div>
     <script src="./index.js"></script>
   </body>
 </html>
