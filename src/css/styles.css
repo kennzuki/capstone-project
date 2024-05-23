@@ -145,3 +145,13 @@ img {
   max-width: 600px;
   width: 100%;
 }
+
+.popup .close-popup {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
