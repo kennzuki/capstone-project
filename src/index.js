@@ -27,6 +27,7 @@ async function getRandomMeal() {
                 `;
 
       cardsContainer.appendChild(card);
+      
     }
   } catch (error) {
     //console.error('Error fetching data:', error);
