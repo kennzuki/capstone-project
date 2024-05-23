@@ -14,4 +14,14 @@ export class MealDB {
       
     }
   }
+
+  async fetchMealById(id) {
+    try {
+      const response = await fetch(`${this.baseUrl}/lookup.php?i=${id}`);
+      const data = await response.json();
+      return data.meals[0];
+    } catch (error) {
+      return error;
+    }
+  }
 }
