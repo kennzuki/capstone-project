@@ -11,7 +11,6 @@ async function getRandomMeal() {
       );
       let data = await response.json();
       let meal = data.meals[0]; //
-      console.log(meal);
 
       // Card for the meal
       const card = document.createElement('div');
